@@ -5,6 +5,7 @@ import "./IProduct.sol";
 import "@openzeppelin/contracts/utils/cryptography/EIP712.sol";
 import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 
+// eip 712 "\x19\x01" ‖ domainSeparator ‖ hashStruct(message)  “‖” is for connection
 contract Product is EIP712, IProduct {
     event SignerOut(address indexed signer);
 
