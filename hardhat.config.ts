@@ -33,7 +33,7 @@ function batchImportPrivateKey() {
 }
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.4",
+  solidity: "0.8.12",
   networks: {
     "rei-devnet": {
       url: "https://rpc-devnet.rei.network",
